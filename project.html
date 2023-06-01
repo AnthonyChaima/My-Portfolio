@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script defer type="text/javascript" src="script.js"></script>
+        <title>
+            My Projects
+        </title>
+    </head>
+
+    <body>
+
+        <div class="topnav">
+            <nav>
+                <a href="index.html"><img src="images/logoo.png" class="logo" width="200px"></a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a class="active" href="project.html">PROJECTS</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <h3>Click on Project Photos for more </h3>
+            <br><br>
+        </div>
+        
+        <div class="grid">
+            <img src="images/1.jpg" onclick="openPopup()">
+            <img src="images/2.jpg" onclick="openPopup2()">
+            <img src="images/3.jpeg" onclick="openPopup3()">
+            <img src="images/4.jpeg" onclick="openPopup4()">
+            <img src="images/5.jpg" onclick="openPopup5()">
+            <img src="images/6.jpg" onclick="openPopup6()">
+
+            <div class="popup" id="popup">
+                <h2>Computer Repairing Services</h2>
+                <p>We Offer PC Repairing Services on both Hardware & Software issues for Individuals and Organizations</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            
+            <div class="popup" id="popup2">
+                <h2>Computer System Security</h2>
+                <p>We offer PC System Security Services for Individuals or Organizations</p>
+                <button type="button" onclick="closePopup2()">OK</button>
+            </div>
+
+            <div class="popup" id="popup3">
+                <h2>Web Services</h2>
+                <p>We Offer Website Development Services for Individuals and Organizations</p>
+                <button type="button" onclick="closePopup3()">OK</button>
+            </div>
+
+            <div class="popup" id="popup4">
+                <h2>Programming Services</h2>
+                <p>We Offer Computer Programming Services for Individuals or Organizations </p>
+                <button type="button" onclick="closePopup4()">OK</button>
+            </div>
+
+            <div class="popup" id="popup5">
+                <h2>Computer Networking</h2>
+                <p>We Offer Computer Networking Services for Individuals or Organizations </p>
+                <button type="button" onclick="closePopup5()">OK</button>
+            </div>
+
+            <div class="popup" id="popup6">
+                <h2>Software Development</h2>
+                <p>We Offer Software Development Services for Individuals or Organizations</p>
+                <button type="button" onclick="closePopup6()">OK</button>
+            </div>
+        </div>
+        
+        <div class="footerbottom">
+            <p>Copyright&copy;2023; Designed by <span class="designer">Anthony</span></p>
+        </div>
+
+    </body>
+</html>
